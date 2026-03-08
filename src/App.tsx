@@ -1,12 +1,13 @@
-import { toast, ToastContainer } from "react-toastify";
+import Background from "./sections/Background.tsx";
 
 const App = () => {
-  const notify = () => toast("Hello, this is a toast!");
 
   return (
-    <div className="bg-red-500">
-      <button onClick={notify}>Show Toast</button>
-      <ToastContainer />
+    <div className="main-container relative min-h-screen overflow-hidden">
+      <Background />
+      <div className="app">
+        
+      </div>
     </div>
   );
 }
